@@ -64,10 +64,13 @@ ol {
 .content {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   flex-direction: row;
-  width: 100%;
   gap: 32px;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: auto;
 }
 
 .result {
@@ -81,7 +84,6 @@ ol {
   width: 711px;
   height: 386px;
   position: relative;
-  overflow: hidden;
 }
 
 .result__video {
@@ -99,6 +101,7 @@ ol {
 }
 
 .search-form__fieldset {
+  font-family: "Fira Sans Condensed", sans-serif;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -196,14 +199,8 @@ ol {
   padding-bottom: 10px;
 }
 
-.content__card-link {
-  text-decoration: none;
-  color: #FFFFFF;
-}
-
 .content__details {
   width: 100%;
-  height: 534px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -263,6 +260,7 @@ ol {
   width: 194px;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
+  font-weight: bold;
   padding: 6px 17px;
   border: 1px solid #FFFFFF;
   color: #FFFFFF;
